@@ -1,6 +1,5 @@
 #!/bin/sh
 
-
 for file in "$@"
 do
 	NAME="$( cat /dev/urandom | tr -cd 'a-f0-9' | head -c 12 )"
@@ -9,4 +8,3 @@ do
 	NAME="${NAME}.${EXTENSION}"
 	mv "$file" $NAME
 done
-
